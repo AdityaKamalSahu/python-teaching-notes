@@ -1,0 +1,147 @@
+#python 
+notes
+
+1.code --- compiler ---machine code
+2. what is python?
+ easy and simple --- like english
+free and open source --- any one can use 
+high level language---
+portable ---any os 
+
+for ---- ds --ml /ai 
+web dev ----Django (framework) backend 
+
+
+
+download 
+python---in system to recognise code
+vs code --- digital notebook 
+
+
+new file ----- .py
+#1st prog.
+
+print("hello world ")
+
+
+print --- function used to show output on the screen 
+function --- to do specific work 
+
+what comes in screen is output 
+input ----code ---output 
+like google search 
+
+
+# PYTHON CHARACTER SET
+letters - A to Z , a to z -------any letter but in English 
+digits - 0 to 9
+special symbols - + -* / etc...
+white space--- blank space , tab etc
+and ASCII and all etc 
+
+
+print statement example....
+
+for next line u use different print statement 
+
+print("hi","adi")---- hi adi
+print(22)----22
+print(20 + 10)-----30
+ operations is there 
+
+
+#VARIABLES 
+its a name given to a memory location in prog.
+jiska value change kr ske 
+
+var = value 
+age = 22
+ it can change and will change 
+
+string --- words or sentence written in ",','''
+integer ---- numerical value 
+float ----- decimals 
+
+
+ex 1
+name = "adi"
+print ("name")----name
+print (name)----adi
+
+age = 22
+
+print ("my name is :", name)
+print ("my age is :", age)
+
+---- my name is : adi
+---- my age is : 22
+
+assignment rule --assignment operator(=)
+left side ----right side (value save)
+
+
+age2 = age 
+print(age2)----22
+
+old variable can be assigned in new one 
+
+#IDENTIFIERS 
+
+NAME OF VARIABLE AND FUNCTION 
+RULES FOR IT 
+1. IT can be upper or lower case , digits , underscore 
+2. it can not start with digits 
+3. we can not use special symbols
+4. it can be of any length 
+but give it simple, short and meaningful name 
+
+ex2 
+
+print(type(name))----str --string 
+print(type(age))----int---integer 
+
+python finds out type when we write type ---it detects 
+
+
+DATA TYPES 
+
+*INTEGERS--- +,-,0
+*STRING ---a , hello
+*FLOAT --- decimal value ---1.666
+*BOOLEAN ---- True or False ----old = false or T or F
+*NONE ---- no value stored ---a = none ---khaali h 
+
+type is also a function
+
+
+
+KEYWORDS 
+
+fixed words which cant be any name or variable
+like dictionary 
+it cant be identifiers
+
+
+
+PYTHON IS A CASE SENSATIVE LANGUAGE 
+
+
+PRINT SUM 
+a = 2
+b = 5
+sum = a + b
+print (sum)-----7 
+
+
+COMMENTS 
+
+"""  """
+#OPERATORS 
+
+
+
+ 
+
+
+
+
