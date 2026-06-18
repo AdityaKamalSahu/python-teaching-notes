@@ -1,0 +1,56 @@
+DAY-2-NOTES-PYTHON
+operators :-an operator is a symbol that performs a certain operation between operands 
+
+arithmetic operators 
+ 
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+print(a%b) #remainder
+print(a**b) #a^b
+
+relational operators 
+used for comparing value
+
+!=
+==
+<
+>
+>=
+<=
+
+check if a is equal to b 
+a == b ---a=b
+a!=b ---a is not equal to b
+
+a = 50
+b = 30
+print(a==b)---false
+print(a!=b)---true 
+print(a>=b)---true 
+print(a>b)---true
+relational operators will always give output in Boolean value meanwhile true or false 
+
+assignment operators :-   +=,
+#  (+=)
+
+a = b
+num = 10
+num = num + 10----20----
+num+=10
+num%=2------0
+num**=5----1,00,000
+print("num :",num)---num : 20
+
+
+and -= ,*=,/= will do same work
+%=
+**=
+
+
+logical operators (not,and ,or)---Boolean value 
+
+
+
+
