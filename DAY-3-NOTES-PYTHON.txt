@@ -1,0 +1,80 @@
+DAY-3-NOTES-PYTHON
+
+#logical operators 
+
+
+NOT---NOT
+
+print(not False)-----True
+print(not True)-----False
+
+suppose 
+a = 20
+b = 10
+print(not(a>b))-----False
+
+AND
+ 
+
+2 value k basis per kam krta h 
+True only if both case/value is True
+a = 10
+b = 5
+val1 = a >b
+print(a>b)-----true 
+val1 = True
+val2 = false 
+print(val2 and val2)----True
+
+true and true ---- true 
+true and false ---- false
+false and true ---- false 
+false and false ----false
+
+Q----
+a - 10
+b - 20
+val1= a ==b-----false 
+val2= a < b----true 
+and ---false
+
+ and ---- true and true 
+val1= False
+val2= True
+print(val2 and val2)----False
+
+OR
+true or true ---true
+true or false -----true
+false or true ---- true 
+false or false ----false 
+
+
+
+matlab koi ek bhi value true h toh true 
+dono true h toh h hi
+sirf agr dono false h toh false
+
+ex:-
+in expression
+
+a = 10
+b =5
+a = b ----false
+a > b ----true 
+print((false) or (true))
+print((a=b)or(a>b))----True
+       no     yes
+
+a = 50
+b = 15
+or 
+val1 = a >=b-----true
+val2 = a != b-----true
+print(val1 or val2)-----true
+
+ 
+
+
+
+

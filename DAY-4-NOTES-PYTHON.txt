@@ -1,0 +1,364 @@
+DAY-4-NOTES-PYTHON
+
+Type Conversion aur Type Casting in Python (Hinglish)
+1. Type Conversion (Automatic)
+
+Jab Python khud hi ek data type ko dusre data type me convert kar deta hai, usse Type Conversion kehte hain.
+ int ----> float 
+Example:
+
+a = 10    --->  # int   3
+b = 5.5  --->   # float 3.----
+
+c = a + b ------->10 + 5.5 = 15.5
+
+
+print(c)---->15.5
+print(type(c))---->float
+
+Output:
+n
+15.5
+<class 'float'>
+
+Explanation:
+Yahan a integer hai aur b float hai. Python ne automatically a ko float me convert kar diya aur result float diya.
+
+. Type Casting (Manual)
+
+Jab programmer khud kisi value ka data type change karta hai, usse Type Casting kehte hain.
+
+Example 1: int()
+
+a = "25"----string 
+b= int(a)-----integer 
+
+
+b = int(a)
+print(a)-----25
+print(b)-----25
+print(type(b))-----integer
+print(type(a))-----string 
+
+
+Output:
+
+25
+<class 'int'>
+
+Example 2: float()
+
+a = 10 -----integer
+
+b = float(a)
+
+print(b)----10.0
+print(type(b))-----float
+
+Output:
+
+10.0
+<class 'float'>
+
+Example 3: str()
+
+a = 100----integer
+
+b = str(a)---->string 
+
+print(b)
+print(type(b))
+
+Output:
+
+100
+<class 'str'>
+Easy Definition for Students
+
+✅ Type Conversion: Python khud data type change kare.
+✅ Type Casting: Programmer khud data type change kare.
+
+Real-Life Example
+age = input("Enter age: ")   # input always string deta hai
+age = int(age)              # type casting
+
+Agar int() na lagao to error aayega, kyunki input string hota hai.
+
+Common Type Casting Functions
+Function	Use
+int()	Integer me convert
+float()	Float me convert
+str()	String me convert
+bool()	Boolean me convert
+
+# Input in Python (Hinglish + English)
+
+## What is Input?
+
+**Input** is used to take data from the user while the program is running.
+
+Python uses the `input()` function to take input.
+
+### Syntax:
+
+```python
+variable_name = input("Message for user")
+```
+a = 2 + 2
+ print (a)----4
+print ("a")---a
+
+a = input ("please share detail")----detail user ne daala ----enter
+print("thankyou for the details",a)
+### Example:
+
+```python
+name = input("Enter your name: ")
+
+print("Hello", name)
+```
+
+**Output:**
+
+```text
+Enter your name: Aditya
+Hello Aditya
+```
+
+---
+
+# Important Note
+
+⚠️ **Whatever you enter using `input()` is stored as a string by default.**
+
+Example:
+
+```python
+age = input("Enter your age: ")
+
+print(type(age))
+```
+
+**Output:**
+
+```text
+<class 'str'>
+```
+
+Even if you enter `20`, Python stores it as `"20"`.
+
+---
+
+# Why Type Casting is Needed with Input?
+
+Suppose:
+
+```python
+age = input("Enter your age: ")
+
+print(age + 5)
+```
+
+This will give an error because:
+
+* `age` = string
+* `5` = integer
+
+Python cannot add a string and an integer.
+
+### Correct Way:
+
+```python
+age = int(input("Enter your age: "))
+
+print(age + 5)
+```
+
+**Output:**
+
+```text
+Enter your age: 20
+25
+```
+
+Here we used **type casting** (`int()`).
+
+---
+take 2 numbers input and print its output as sum of them 
+
+# Example 1: Taking Name Input
+
+```python
+name = input("Enter your name: ")
+
+print("Welcome", name)
+```
+
+**Output:**
+
+```text
+Enter your name: Aditya
+Welcome Aditya
+```
+
+---
+
+# Example 2: Taking Age Input
+
+```python
+age = int(input("Enter your age: "))
+
+print("Next year you will be", age + 1)
+```
+
+**Output:**
+
+```text
+Enter your age: 21
+Next year you will be 22
+```
+
+---
+
+# Example 3: Addition of Two Numbers
+
+```python
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
+
+print("Sum =", num1 + num2)
+```
+
+**Output:**
+
+```text
+Enter first number: 10
+Enter second number: 20
+Sum = 30
+```
+
+---
+
+# Example 4: Decimal Number Input
+
+```python
+height = float(input("Enter your height in feet: "))
+
+print("Your height is", height)
+```
+
+**Output:**
+
+```text
+Enter your height in feet: 6.1
+Your height is 6.1
+```
+
+Here we use `float()` because decimal values are allowed.
+
+---
+
+# Example 5: Marks Percentage Calculator
+
+```python
+marks = int(input("Enter marks obtained: "))
+total = int(input("Enter total marks: "))
+
+percentage = (marks / total) * 100
+
+print("Percentage =", percentage)
+```
+
+**Output:**
+
+```text
+Enter marks obtained: 226
+Enter total marks: 450
+Percentage = 50.22
+```
+
+---
+
+# Different Ways of Type Casting with Input
+
+### Integer Input
+
+```python
+num = int(input("Enter a number: "))
+```
+
+### Float Input
+
+```python
+price = float(input("Enter price: "))
+```
+
+### String Input
+
+```python
+name = str(input("Enter name: "))
+```
+
+*(Actually `input()` already returns string, so `str()` is optional.)*
+
+### Boolean Conversion
+
+```python
+value = bool(input("Enter something: "))
+
+print(value)
+```
+
+If user enters anything → `True`
+
+If empty string / empty input → `False`
+
+---
+
+# Quick Revision
+
+### Input
+
+Used to take data from user.
+
+```python
+name = input("Enter name: ")
+```
+
+### Type Conversion
+
+Python automatically changes data type.
+
+```python
+10 + 5.5
+# Result = 15.5
+```
+
+### Type Casting
+
+Programmer manually changes data type.
+
+```python
+age = int(input("Enter age: "))
+```
+
+### Most Used Functions
+
+| Function  | Purpose                   |
+| --------- | ------------------------- |
+| `input()` | Take input from user      |
+| `int()`   | Convert to integer        |
+| `float()` | Convert to decimal number |
+| `str()`   | Convert to string         |
+| `bool()`  | Convert to boolean        |
+
+**One-line summary:**
+👉 `input()` always gives a string, so whenever you want to do mathematical operations, use **type casting** (`int()` or `float()`).
+
+
+
+Q-WAP to input side of square & print its area 
+side = float(input("enter side"))
+print("area =", side * side)
+
+
