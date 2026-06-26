@@ -1,0 +1,289 @@
+DAY-5-NOTES-PYTHON
+
+###use of quotes
+
+this is Aditya's class
+"this is Aditya 's class"
+
+concentration ---- "hello" + "world"
+space sequence ---- 
+
+escape sequence character 
+
+str1 ="This is aditya. \n taking class."
+print(str1)---
+
+----------------------------------------------------------------------------------------
+
+### LENGTH FUNCTION 
+
+
+length str ----len(str)
+str1 = "adi"
+print(len(str1))
+
+--------------------------------------------------------------------------------
+### 
+What is a String?
+
+A string is a collection of characters enclosed in quotes.
+
+name = "Aditya"
+city = "Gadarwara"
+
+Here:
+
+"Aditya" is a string
+"Gadarwara" is a string
+
+A string can contain letters, numbers, symbols, and spaces.
+
+a = "Hello"
+b = "123"
+c = "Python 3.13"
+d = "Hello @123"
+
+All of these are strings because they are inside quotes.
+
+Creating Strings
+Double Quotes
+name = "Aditya"
+Single Quotes
+name = 'Aditya'
+
+Both are valid.
+-----------------------------------------------------------------------
+Checking Data Type
+name = "Aditya"
+
+print(type(name))
+
+Output:
+
+<class 'str'>
+
+str means String.
+----------------------------------------------------------------------------
+##
+
+String Concatenation (Joining Strings)
+first = "Aditya"
+last = "Sahu"
+
+full = first + " " + last
+
+print(full)
+
+Output:
+
+Aditya Sahu
+
++ joins strings.
+----------------------------------------------------------
+Repeating a String
+print("Hi " * 3)
+
+Output:
+
+Hi Hi Hi
+Length of String
+
+len() tells how many characters are present.
+
+name = "Python"
+
+print(len(name))
+
+Output:
+
+6
+
+-------------------------------------------------------------------------------
+### Accessing Characters (Indexing)
+
+Every character has a position.
+
+word = "Python"
+Character	P	y	t	h	o	n
+Index	        0       1       2       3       4       5
+print(word[0])
+print(word[1])
+
+Output:
+
+P
+y
+
+---------------------------------------------------------------------
+### Negative Indexing
+word = "Python"
+
+ P   Y   T   H   O   N
+-6  -5  -4  -3  -2  -1
+
+print(word[-1])
+print(word[-2])
+
+Output:
+
+n
+o
+
+-----------------------------------------------------------------------
+ ###String Slicing
+
+Get multiple characters.
+ISME END WALA WORD OUTPUT M NAHI AAYEGA 
+word = "Python"
+
+print(word[0:3])
+
+Output:
+
+Pyt
+
+Explanation:
+
+0 = P
+1 = y
+2 = t
+-----------------------------------------------------------------------------
+### Useful String Methods
+1. upper()
+
+
+Convert to uppercase.
+
+name = "aditya"
+
+print(name.upper())
+
+Output:
+
+ADITYA
+
+
+
+2. lower()
+name = "ADITYA"
+
+print(name.lower())
+
+Output:
+
+aditya
+
+
+
+3. capitalize()
+name = "aditya"
+
+print(name.capitalize())
+
+Output:
+
+Aditya
+
+
+
+4. replace()
+text = "I like Java"
+
+print(text.replace("Java", "Python"))
+
+Output:
+
+I like Python
+
+
+5. find()
+text = "Python"
+
+print(text.find("t"))
+
+Output:
+2
+
+
+6.endswith()
+str = " hi I am adi"
+print(str.endswith("adi"))----true 
+print(str.endswith("bhi"))----false
+
+7.String Membership
+
+Check whether something exists in a string.
+
+text = "Python"
+
+print("Py" in text)
+
+Output:
+
+True
+print("Java" in text)
+
+Output:
+
+False
+-----------------------------------------------------------------------------
+Practice Questions
+Q1
+name = input("Enter your name: ")
+print("Welcome", name)
+Q2
+
+Take first name and last name separately and print full name.
+
+Example:
+
+Input:
+Aditya
+Sahu
+
+Output:
+Aditya Sahu
+Q3
+
+Take a name and print it in uppercase.
+
+Example:
+
+Input:
+aditya
+
+Output:
+ADITYA
+Q4
+
+Take a word and print its length.
+
+Example:
+
+Input:
+Python
+
+Output:
+6
+Q5
+
+Take a word and print the first and last character.
+
+Example:
+
+Input:
+Python
+
+Output:
+P
+n
+------------------------------------------------------------------------------
+One-Line Definition for Notes
+
+$$ String: A string is a sequence of characters enclosed in single quotes (' ') or double quotes (" "). It is used to store text data in Python.
+
+
+$$ negative index only exists for slicing 
+
+
+
