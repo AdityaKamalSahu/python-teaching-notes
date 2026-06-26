@@ -1,0 +1,233 @@
+DAY-6-PYTHON-NOTES
+Think of conditions as decision making in Python.
+
+indentation :- proper spacing in python----for writing multiple spaces---imp in python
+
+
+
+draw 
+ is it  raining     ?
+       |
+       |
+      Yes 
+       |
+       |
+   Take umbrella 
+       |
+       |
+      No
+       |
+       |
+don't take umbrella 
+
+
+rain = TRUE 
+
+if rain :
+    print ( " take umbrella ")
+else :
+    priny ("dont take umbrella ")
+
+
+conditional statements 
+
+
+
+
+
+
+
+
+
+1. Simple (if)
+
+Syntax:
+
+if condition:
+    statement--print 
+
+Example:
+
+age = 20
+
+if age >= 18:
+    print("You can vote")
+
+Output:
+
+You can vote
+
+Python checks the condition:
+
+True → run the code
+False → skip the code
+----------------------------------------------------------------------------------------------
+2. if-else
+
+When there are two possible outcomes.
+
+age = 16
+
+if age >= 18:
+    print("You can vote")
+else:
+    print("You cannot vote")
+
+Output:
+
+You cannot vote
+--------------------------------------------------------------------------------------------
+3. if-elif-else
+
+When there are multiple conditions.
+
+marks = 75
+
+if marks >= 90:
+    print("Grade A")
+elif marks >= 70:---------------------------else if 
+    print("Grade B")
+else:
+    print("Grade C")
+
+Output:
+
+Grade B
+
+Python checks from top to bottom and stops when it finds the first True condition.
+------------------------------------------------------------------------------------------
+
+example :-
+
+marks = int(input("enter student marks : "))
+
+if(marks >= 90):
+    grade = "A"
+elif(marks >= 80 and marks < 90):
+    grade = "B"
+elif(marks >= 70 and marks < 80):
+    grade = "C"
+else:
+    grade = "D"
+
+print("grade of the student ->", grade) 
+------------------------------------------------------------------------------------------
+1. Multiple if Statements
+num = 5
+
+if(num > 2):
+    print("greater than 2")
+
+if(num > 3):
+    print("greater than 3")
+
+Output
+
+greater than 2
+greater than 3
+
+Since both conditions are true, both if statements execute.
+
+2. Nested if
+age = 34
+
+# nesting
+if(age >= 18):
+    if(age >= 80):
+        print("cannot drive")
+    else:
+        print("can drive")
+else:
+    print("cannot drive")
+
+
+3. Practice Questions
+Q1
+
+Write a program to check if a number entered by the user is odd or even.
+
+----------------input lena hai------ 99
+----------------variable 
+----------------if (num % 2 == 0):
+                    even 
+----------------else :
+                    odd 
+
+Q2
+
+Write a program to find the greatest of 3 numbers entered by the user.
+
+num 1-----input 1------- 50
+
+num2 ----- input 2 -------70
+num3 -----input 3-------30
+
+if num 1 > num3 and num 1 > num 2
+
+
+else 
+
+
+
+Q3
+
+Write a program to check if a number is a multiple of 7 or not
+
+--------------------------------------------------------------------------------------------
+
+solution 
+Q1. Check if a number is Odd or Even
+Code
+num = int(input("Enter a number: "))
+
+if(num % 2 == 0):
+    print("Even Number")
+else:
+    print("Odd Number")
+
+
+Sample Output 1
+Enter a number: 8
+Even Number
+Sample Output 2
+Enter a number: 15
+Odd Number
+
+
+
+Q2. Find the Greatest of 3 Numbers
+Code
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
+
+if(a > b and a > c):
+    print("Greatest number is:", a)
+elif(b > c):
+    print("Greatest number is:", b)
+else:
+    print("Greatest number is:", c)
+Sample Output
+
+
+
+
+
+
+
+Q3. Check if a Number is a Multiple of 7
+Code
+num = int(input("Enter a number: "))
+
+if(num % 7 == 0):
+    print("It is a multiple of 7")
+else:
+    print("It is not a multiple of 7")
+Sample Output 1
+
+ 
+Enter a number: 49
+It is a multiple of 7
+Sample Output 2
+Enter a number: 50
+It is not a multiple of 7
